@@ -1,0 +1,17 @@
+﻿  Main.cpp
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(23,16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         with
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         [
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:             T=unsigned int
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         ]
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         and
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         [
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:             T=float
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,48): warning C4244:         ]
+  Generating code
+  1 of 16 functions ( 6.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  BrickBreaker.vcxproj -> C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\x64\Release\BrickBreaker.exe

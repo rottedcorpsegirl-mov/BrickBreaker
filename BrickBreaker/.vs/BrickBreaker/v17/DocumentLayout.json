@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
+              "RelativeDocumentMoniker": "BrickBreaker\\Main.cpp",
+              "ToolTip": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
+              "RelativeToolTip": "BrickBreaker\\Main.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-16T11:40:29.21Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
