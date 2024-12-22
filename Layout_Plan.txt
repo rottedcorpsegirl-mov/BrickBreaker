@@ -1,0 +1,32 @@
+ball 
+ball moves down from middle of screen and moves in a line depending on where the paddle is
+ball will bounce around and move based on the direction ( reversing direction)
+ball will hit paddle and bounce upwards
+
+player has 3 lives
+player looses 1 life if ball goes below a y limit
+game will end and show End Screen if lives = 0
+
+bricks
+bricks are rectangles that will be for points
+bricks will have different colors that determine how many times it needs to be hit 
+bricks will be destroyed if hit limit is reached
+bricks add points for each hit and a lump sum of points for each destroyed brick
+
+after all bricks are destroyed a new group of bricks will appear ( i think having different brick layouts in a hashmap and have them change randomly?)
+
+score is shown at the end
+
+
+powerups:
+multi balls ( limited ):
+big ass paddle ( limited ):
+score multiplier ( limited ):
+Points per brick ( perminant for run): 
+
+
+music: ????
+
+background: ????
+
+save high scores : not sure how i would do this

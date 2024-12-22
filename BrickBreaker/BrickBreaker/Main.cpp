@@ -1,14 +1,16 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Layouts.h"
 using namespace std;
 using namespace sf;
 int main() {
 
-	RenderWindow window(VideoMode(800, 600), "Brick Breaker");
+	RenderWindow window(VideoMode(600, 900), "Brick Breaker");
 	
-	RectangleShape paddle(Vector2f(150, 20));
-	paddle.setPosition(sf::Vector2f(350, 500));
-	
+	RectangleShape paddle(Vector2f(100, 20));
+	paddle.setPosition(sf::Vector2f(250, 800));
+
+	Layouts layout;
 
 	float speed = 300.0f;
 	Clock clock;
@@ -63,7 +65,7 @@ int main() {
 		}
 		window.clear();
 		window.draw(paddle);
-		
+		layout.draw(window);
 		window.display();
 
 

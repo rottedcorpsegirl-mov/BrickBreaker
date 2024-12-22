@@ -1,30 +1,116 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\",
+  "WorkspaceRootPath": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Layouts.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Layouts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Bricks.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Bricks.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{59AF9DE7-8784-4AB5-8FDD-8D5E4CEF7B01}|BrickBreaker\\BrickBreaker.vcxproj|solutionrelative:BrickBreaker\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 98,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Layouts.cpp",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.cpp",
+              "RelativeDocumentMoniker": "BrickBreaker\\Layouts.cpp",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.cpp",
+              "RelativeToolTip": "BrickBreaker\\Layouts.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-17T14:52:10.641Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ball.h",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\ball.h",
+              "RelativeDocumentMoniker": "BrickBreaker\\ball.h",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\ball.h",
+              "RelativeToolTip": "BrickBreaker\\ball.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-20T18:46:51.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Layouts.h",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.h",
+              "RelativeDocumentMoniker": "BrickBreaker\\Layouts.h",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Layouts.h",
+              "RelativeToolTip": "BrickBreaker\\Layouts.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-17T14:41:51.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bricks.cpp",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.cpp",
+              "RelativeDocumentMoniker": "BrickBreaker\\Bricks.cpp",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.cpp",
+              "RelativeToolTip": "BrickBreaker\\Bricks.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-17T14:38:42.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bricks.h",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.h",
+              "RelativeDocumentMoniker": "BrickBreaker\\Bricks.h",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Bricks.h",
+              "RelativeToolTip": "BrickBreaker\\Bricks.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-17T14:30:54.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
+              "DocumentMoniker": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
               "RelativeDocumentMoniker": "BrickBreaker\\Main.cpp",
-              "ToolTip": "C:\\Users\\matterviola\\Documents\\code\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
+              "ToolTip": "H:\\code\\platformer\\BrickBreaker\\BrickBreaker\\BrickBreaker\\Main.cpp",
               "RelativeToolTip": "BrickBreaker\\Main.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAswDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-16T11:40:29.21Z",
               "EditorCaption": ""

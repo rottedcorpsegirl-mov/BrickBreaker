@@ -1,0 +1,19 @@
+#pragma once
+#include <iostream>
+#include <SFML/Graphics.hpp>
+
+using namespace std;
+using namespace sf;
+
+
+class ball
+{
+public:
+
+
+
+private:
+
+
+};
+
