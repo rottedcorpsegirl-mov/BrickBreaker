@@ -17,3 +17,8 @@ void Bricks::draw(RenderWindow& window) const
 {
 	window.draw(bricks);
 }
+
+FloatRect Bricks::getBounds() const
+{
+	return bricks.getGlobalBounds();
+}

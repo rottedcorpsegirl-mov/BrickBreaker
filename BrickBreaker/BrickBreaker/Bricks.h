@@ -9,11 +9,10 @@ class Bricks
 {
 public:
 	Bricks();
-	Bricks(const Vector2f&, const Vector2f& position);
+	Bricks(const Vector2f& size, const Vector2f& position);
 
-	
 	void draw(RenderWindow& window) const;
-
+	FloatRect getBounds() const;
 
 private:
 	RectangleShape bricks;

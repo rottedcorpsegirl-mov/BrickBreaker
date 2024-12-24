@@ -30,3 +30,19 @@ void Layouts::createLayout1()
 }
 
 
+void Layouts::handleCollision(balls& ball)
+{
+	for (auto it = bricks.begin(); it !=bricks.end(); )
+	{
+		if (ball.getBounds().intersects(it->getBounds()))
+		{
+			ball.reverseVelocityY();
+			it = bricks.erase(it);
+		}
+		else
+		{
+			++it;
+		}
+
+	}
+}
