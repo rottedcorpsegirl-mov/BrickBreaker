@@ -6,12 +6,16 @@ GameOver::GameOver(const Font& font, const Vector2f& windowSize)
 	gameOverText.setString("Game Over!");
 	gameOverText.setCharacterSize(50);
 	gameOverText.setFillColor(Color::Red);
+	gameOverText.setOutlineColor(Color::Black);
+	gameOverText.setOutlineThickness(10);
 	gameOverText.setPosition(windowSize.x / 2.f - 100.f, windowSize.y / 2.f - 100.f);
 
 	restartPrompt.setFont(font);
 	restartPrompt.setString("Press R to Restart");
 	restartPrompt.setCharacterSize(30);
 	restartPrompt.setFillColor(Color::Red);
+	restartPrompt.setOutlineColor(Color::Black);
+	restartPrompt.setOutlineThickness(10);
 	restartPrompt.setPosition(windowSize.x / 2.f - 120.f, windowSize.y / 2.f );
 }
 

@@ -10,7 +10,7 @@ class Bricks
 public:
 	Bricks();
 	Bricks(const Vector2f& size, const Vector2f& position);
-
+	
 	void draw(RenderWindow& window) const;
 	FloatRect getBounds() const;
 

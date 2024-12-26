@@ -1,18 +1,39 @@
-﻿  Main.cpp
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(73,17): warning C4552: '-': result of expression not used
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         with
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         [
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:             T=unsigned int
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         ]
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         and
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         [
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:             T=float
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         ]
-  Generating code
-  1 of 181 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  BrickBreaker.vcxproj -> H:\code\platformer\BrickBreaker\BrickBreaker\x64\Release\BrickBreaker.exe
+﻿  balls.cpp
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'balls.cpp')
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,41): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'balls.cpp')
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.cpp(55,13): error C2511: 'void balls::handlePaddleCollision(const paddle &)': overloaded member function not found in 'balls'
+      C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(10,7):
+      see declaration of 'balls'
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.cpp(64,3): error C2352: 'balls::reverseVelocityY': a call of a non-static member function requires an object
+      C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.cpp(50,13):
+      see declaration of 'balls::reverseVelocityY'
+  
+  Layouts.cpp
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Layouts.cpp')
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,41): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'Layouts.cpp')
+  
+  Main.cpp
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Main.cpp')
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,41): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'Main.cpp')
+  
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(57,16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(97,9): error C2664: 'void balls::handlePaddleCollision(const int)': cannot convert argument 1 from 'paddle' to 'const int'
+      C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(97,31):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\balls.h(25,7):
+      see declaration of 'balls::handlePaddleCollision'
+      C:\Users\matterviola\Documents\code\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(97,9):
+      while trying to match the argument list '(paddle)'
+  
+  paddle.cpp

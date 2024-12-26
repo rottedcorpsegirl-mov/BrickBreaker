@@ -2,6 +2,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
+
 using namespace std;
 using namespace sf;
 
@@ -9,7 +10,7 @@ using namespace sf;
 class balls
 {
 public:
-	balls();
+	
 	balls(const float& radius, const Vector2f position);
 
 	void update(float deltaTime, const RenderWindow& window);
@@ -20,6 +21,8 @@ public:
 
 	void reverseVelocityX();
 	void reverseVelocityY();
+
+	void handlePaddleCollision(const paddle& paddle);
 
 
 private:

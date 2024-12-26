@@ -5,6 +5,7 @@
 #include "balls.h"
 #include "Bricks.h"
 #include "GameOver.h"
+#include "paddle.h"
 
 using namespace std;
 using namespace sf;
@@ -18,16 +19,16 @@ int main() {
 	window.setFramerateLimit(60);
 
 	Texture backgroundTexture;
-	if (!backgroundTexture.loadFromFile("H:/code/platformer/BrickBreaker/BrickBreaker/src/BackGround.jpg")) {
+	if (!backgroundTexture.loadFromFile("C:/Users/matterviola/Documents/code/BrickBreaker/BrickBreaker/src/BackGround.jpg")) {
 		cout << "background not working!";
 	}
 	Sprite backgroundSprite;
 	backgroundSprite.setTexture(backgroundTexture);
-	RectangleShape paddle(Vector2f(100, 20));
-	paddle.setPosition(sf::Vector2f(250, 800));
+	paddle player(Vector2f(100,20), Vector2f(250,800));
+	
 
 	Font font;
-	if (!font.loadFromFile("H:/code/platformer/BrickBreaker/BrickBreaker/src/POSTHAND.ttf")) {
+	if (!font.loadFromFile("C:/Users/matterviola/Documents/code/BrickBreaker/BrickBreaker/src/POSTHAND.ttf")) {
 		cout << "failed to load font! \n";
 
 	}
@@ -49,7 +50,7 @@ int main() {
 
 		//while event loop
 		while (window.pollEvent(events)) {
-			Vector2f paddlePos = paddle.getPosition(); //need this in game loop instead of out of it
+			
 			Vector2f ballPos = ball.getPosition();
 			switch (events.type)
 			{
@@ -64,15 +65,17 @@ int main() {
 					break;
 					
 				case Keyboard::P:
-					cout << "Paddle X Postion: " << paddlePos.x<< endl<< "Paddle Y position: "<< paddlePos.y<< endl;
+					//cout << "Paddle X Postion: " << paddle<< endl<< "Paddle Y position: "<< paddlePos.y<< endl;
 					cout << "ball X Position: " << ballPos.x << endl << "Paddle Y position: " << ballPos.y << endl;
+					gameState = GameOverState;
+					cout << gameState;
 					break;
 				case Keyboard::R:
 					if (gameState == GameOverState) {
 						//restarting game
-						gameState - Playing;
+						gameState = Playing;
 						ball = balls(10.f, Vector2f(300.f, 460.f));
-						paddle.setPosition(Vector2f(300.f, 800.f));
+						balls ball(10.f, Vector2f(300.f, 460.f));
 						layout = Layouts();
 
 					}
@@ -88,46 +91,24 @@ int main() {
 		//paddle movement
 		if (gameState == Playing)
 		{
-			if (Keyboard::isKeyPressed(Keyboard::A)) {
-
-				paddle.move(-speed * deltaTime, 0);
-
-			}
-
-			if (Keyboard::isKeyPressed(Keyboard::D)) {
-
-				paddle.move(speed * deltaTime, 0);
-			}
-
-			//wrapping function
-			if (paddle.getPosition().x + paddle.getSize().x < 0) {
-				paddle.setPosition(Vector2f(window.getSize().x, paddle.getPosition().y));  // Wrap to the right
-			}
-
-			if (paddle.getPosition().x > window.getSize().x) {
-				paddle.setPosition(Vector2f(-paddle.getSize().x, paddle.getPosition().y));  // Wrap to the left
-			}
-
+			player.update(deltaTime);
 			// update ball
 			ball.update(deltaTime, window);
-
-			//ball with paddle collison
-			if (ball.getBounds().intersects(paddle.getGlobalBounds())) {
-				ball.reverseVelocityY();
-			}
-			layout.handleCollision(ball);
-			if (ball.getBounds().top + ball.getBounds().height >= window.getSize().y) {
-				gameState = GameOverState;
-			}
+			ball.handlePaddleCollision(player);
+			
+			
 		}
 		
 	
 		
 		window.clear();
 		window.draw(backgroundSprite);
-		window.draw(paddle);
 		ball.draw(window);
+		player.draw(window);
 		layout.draw(window);
+		if (gameState == GameOverState) {
+			gameOver.draw(window);
+		}
 		
 		window.display();
 

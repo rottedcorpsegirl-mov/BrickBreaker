@@ -1,11 +1,9 @@
 
 #include "balls.h"
+#include "paddle.h"
 
-balls::balls()
-{
-}
 
-balls::balls(const float& radius, const Vector2f position) :velocity(200.f,-200.f)
+balls::balls(const float& radius, const Vector2f position) :velocity(0.f,200.f)
 {
 	Balls.setRadius(radius);	
 	Balls.setFillColor(Color::White);
@@ -25,10 +23,7 @@ void balls::update(float deltaTime, const RenderWindow& window)
 	{
 		reverseVelocityY();
 	}
-	//for ending game
-	if (Balls.getPosition().y + Balls.getRadius() * 2 >= window.getSize().y) {
-		reverseVelocityY();
-	}
+	
 }
 
 void balls::draw(RenderWindow& window)
@@ -55,4 +50,19 @@ void balls::reverseVelocityX()
 void balls::reverseVelocityY()
 {
 	velocity.y = -velocity.y;
+}
+
+void balls::handlePaddleCollision(const paddle& paddle)
+{
+	Vector2f ballPos = Balls.getPosition();
+	FloatRect ballBounds = Balls.getGlobalBounds();
+	FloatRect paddleBounds = paddle.getGlobalBounds();
+
+
+	if (ballBounds.intersects(paddleBounds))
+	{
+		reverseVelocityY();
+		Vector2f paddleSpeed = paddle.getPosition() - paddle.lastPaddlePos();
+		velocity.x += paddleSpeed.x * 0.1f;
+	}
 }
