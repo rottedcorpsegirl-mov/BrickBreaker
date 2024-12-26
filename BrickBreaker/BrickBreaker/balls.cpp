@@ -14,9 +14,8 @@ balls::balls(const float& radius, const Vector2f position) :velocity(200.f,-200.
 
 void balls::update(float deltaTime, const RenderWindow& window)
 {
-	Vector2f position = Balls.getPosition();
-
 	Balls.move(velocity * deltaTime);
+	Vector2f position = Balls.getPosition();
 
 	if (position.x <= 0 || position.x + Balls.getRadius() * 2 >= window.getSize().x)
 	{

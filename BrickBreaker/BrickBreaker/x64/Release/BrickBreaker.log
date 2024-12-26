@@ -1,17 +1,17 @@
 ﻿  Main.cpp
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(36,16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         with
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         [
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:             T=unsigned int
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         ]
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         and
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         [
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:             T=float
-H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(72,48): warning C4244:         ]
-  balls.cpp
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(56,16): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(73,17): warning C4552: '-': result of expression not used
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         with
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         [
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:             T=unsigned int
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         ]
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         and
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         [
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:             T=float
+H:\code\platformer\BrickBreaker\BrickBreaker\BrickBreaker\Main.cpp(104,49): warning C4244:         ]
   Generating code
-  2 of 131 functions ( 1.5%) were compiled, the rest were copied from previous compilation.
+  1 of 181 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
