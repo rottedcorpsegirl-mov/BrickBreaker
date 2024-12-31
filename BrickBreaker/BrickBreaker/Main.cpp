@@ -6,6 +6,7 @@
 #include "Bricks.h"
 #include "GameOver.h"
 #include "paddle.h"
+#include "SoundManager.h"
 
 using namespace std;
 using namespace sf;
@@ -13,13 +14,23 @@ using namespace sf;
 enum GameState { Playing, GameOverState }; // Game states
 GameState gameState = Playing;
 
+SoundManager soundmanager;
+void initializeSounds() 
+{
+	soundmanager.loadSound("wall","H:/code/platformer/BrickBreaker/BrickBreaker/src/audio/wallHit.wav");
+	soundmanager.loadSound("Brick", "H:/code/platformer/BrickBreaker/BrickBreaker/src/audio/wallHit.wav");
+	soundmanager.loadSound("lastBrick", "H:/code/platformer/BrickBreaker/BrickBreaker/src/audio/wallHit.wav");
+	soundmanager.loadMusic("H:/code/platformer/BrickBreaker/BrickBreaker/src/audio/Background.wav");
+}
+
 int main() {
 
 	RenderWindow window(VideoMode(600, 900), "Brick Breaker");
 	window.setFramerateLimit(60);
 
+
 	Texture backgroundTexture;
-	if (!backgroundTexture.loadFromFile("C:/Users/matterviola/Documents/code/BrickBreaker/BrickBreaker/src/BackGround.jpg")) {
+	if (!backgroundTexture.loadFromFile("H:/code/platformer/BrickBreaker/BrickBreaker/src/BackGround.jpg")) {
 		cout << "background not working!";
 	}
 	Sprite backgroundSprite;
@@ -28,7 +39,7 @@ int main() {
 	
 
 	Font font;
-	if (!font.loadFromFile("C:/Users/matterviola/Documents/code/BrickBreaker/BrickBreaker/src/POSTHAND.ttf")) {
+	if (!font.loadFromFile("H:/code/platformer/BrickBreaker/BrickBreaker/src/POSTHAND.ttf")) {
 		cout << "failed to load font! \n";
 
 	}
@@ -42,7 +53,7 @@ int main() {
 
 	float speed = 300.0f;
 	Clock clock;
-
+	initializeSounds();
 	while (window.isOpen()) {
 		float deltaTime = clock.restart().asSeconds();
 		
@@ -95,12 +106,29 @@ int main() {
 			// update ball
 			ball.update(deltaTime, window);
 			ball.handlePaddleCollision(player);
-			
+			layout.handleCollision(ball);
+			if (ball.isOutOfBounds(window))
+			{
+				gameState = GameOverState;
+			}
 			
 		}
 		
-	
+		if (ballHitsPaddle)
+		{
+			soundManager.playSound("paddle");
+		}
 		
+		if (ballHitsWall) 
+		{
+			soundManager.playSound("wall");
+		}
+		
+		if (ballHitsBrick) 
+		{
+			soundManager.playSound("brick");
+		}
+
 		window.clear();
 		window.draw(backgroundSprite);
 		ball.draw(window);

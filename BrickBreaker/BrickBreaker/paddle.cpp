@@ -1,5 +1,5 @@
 #include "paddle.h"
-#include "balls.h"
+
 paddle::paddle(const Vector2f& size, const Vector2f& position): speed(300.0f), direction(0), previousPosition(position)
 {
 	Paddle.setSize(size);
